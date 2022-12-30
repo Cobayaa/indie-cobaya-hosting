@@ -3,10 +3,10 @@ import os
 
 load_dotenv() 
 
-MYSQL_ADDON_HOST = os.environ.get('MYSQL_ADDON_HOST')
-MYSQL_ADDON_USER = os.environ.get('MYSQL_ADDON_USER')
-MYSQL_ADDON_PASSWORD = os.environ.get('MYSQL_ADDON_PASSWORD')
-MYSQL_ADDON_DB = os.environ.get('MYSQL_ADDON_DB')
+MYSQL_HOST = os.environ.get('MYSQL_HOST')
+MYSQL_USER = os.environ.get('MYSQL_USER')
+MYSQL_PASSWORD = os.environ.get('MYSQL_PASSWORD')
+MYSQL_DB = os.environ.get('MYSQL_DB')
 MYSQL_PORT = os.environ.get('MYSQL_PORT')
 
 
