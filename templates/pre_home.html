@@ -1,0 +1,264 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/pre_home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <title>Cobaya</title>
+    <link rel="icon" type="image/png" href="/static/logo1.png">
+
+</head>
+<body>
+
+    <header>
+        
+        <h1 class="logo"> <img class="log_img" src="/static/logo2.png"> <span>Cobaya</span>.</h1>
+        <div class="ff">
+            <ul>
+                <li><a class="active" href="#home">Home</a></li>
+                <li><a href="#carta">Carta</a></li>
+                <li><a href="#servicios">Servicios</a></li>  
+                <li><a href="#about">Sobre Nosotros</a></li>
+            </ul>
+        </div>
+            
+        <div class="opciones">
+            <a class="log" href="{{ url_for('login')}}">Iniciar Sesión</a>          
+        </div>
+    </header>
+    <div class="contenedor">
+        <div id="home" ></div>
+        <div class="slider-contenedor">
+            <section class="contenido-slider">
+                <div>
+                    <h2>PREPARÁMOS</h2>
+                    <H2 class="letra">HAMBURGUESAS</H2>
+                    <H2>DELICIOSAS<H3>EN 5 MIN</H3></H2>
+                    <a class="href" href="#">vamos</a>
+                </div>
+                <img src="/static/hamburgesa.png">
+            </section>
+            
+            <section class="contenido-slider">
+                <div>
+                    <h2>BATIDOS</h2>
+                    <H2 class="letra">FRUTALES</H2>
+                    <H2 class="tono">ARTESANALES<H3>EN 3 MIN</H3></H2>
+                    <a class="href" href="#">vamos</a>
+                </div>
+                <img src="/static/batido.png">
+            </section>
+
+            <section class="contenido-slider">
+                <div>
+                    <h2><span class="plus">+</span>PORCIÓNES</h2>
+                    <H2 class="letra">PAPAS FRITAS</H2>
+                    <H2 class="gourmet">GOURMET<H3>EN 5 MIN</H3></H2>
+                    <a class="href" href="#">vamos</a>
+                </div>
+                <img src="/static/papas.png">
+            </section>
+
+            <section class="contenido-slider">
+                <div>
+                    <h2>LOS MEJORES</h2>
+                    <H2 class="letra">TACOS</H2>
+                    <H2 class="asada">DE ASADA<H3>EN 4 MIN</H3></H2>
+                    <a class="href" href="#">vamos</a>
+                </div>
+                <img src="/static/taco.png">
+            </section>
+            
+            <section class="contenido-slider">
+                <div>
+                    <h2>PREPARÁMOS</h2>
+                    <H2 class="letra">HAMBURGUESAS</H2>
+                    <H2>DELICIOSAS<H3>EN 5 MIN</H3></H2>
+                    <a class="href" href="#">vamos</a>
+                </div>
+                <img src="/static/hamburgesa.png">
+            </section>
+
+        </div>     
+    </div>
+    <div id="carta"></div>        
+    <h1 class="ha">Carta de Presentación<span class="punto">.</span></h1>
+    <p class="frase"><span class="comillas">"</span>Pórque amamos la vida, le ponemos sabor a la comida<span class="comillas">"</span></p>
+    <div class="carta_presentacion">
+        <div class="tarjeta">
+            <div class="imagen">
+                <img class="imgn" src="/static/americana.jpg">
+            </div>
+            <div class="pre_contenido">
+                <div class="contenido">
+                    <h2 class="cosi">Comida Mexicana</h2>
+                    <p class="tuti">la comida mexica reúne tradiciones
+                        gastronómicas tal como la indígena...
+                    </p>
+                    <a class="vamos" href="#">Vamos</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="tarjeta">
+            <div class="imagen">
+                <img class="imgn" src="/static/mexicana.jpg">
+            </div>
+            <div class="pre_contenido">
+                <div class="contenido">
+                    <h2 class="cosi">Comida Americana</h2>
+                    <p class="tuti">La gastronomía de Estados Unidos es la
+                        fusión de muchas culturas...
+                    </p>
+                    <a class="vamos" href="#">Vamos</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="tarjeta">
+            <div class="imagen">
+                <img class="imgn" src="/static/italiana.jpg">
+            </div>
+            <div class="pre_contenido">
+                <div class="contenido">
+                    <h2 class="cosi">Comida China</h2>
+                    <p class="tuti">
+                        A la comida China se le da un sentido del gusto con las
+                        artes culinarias...
+                    </p>
+                    <a class="vamos" href="#">Vamos</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="tarjeta">
+            <div class="imagen">
+                <img class="imgn" src="/static/china.jpg">
+            </div>
+            <div class="pre_contenido">
+                <div class="contenido">
+                    <h2 class="cosi">Comida Italiana</h2>
+                    <p class="tuti">
+                        La gastronomía de Italia se caracteriza
+                        por llevar muchas verduras, frutas...
+                    </p>
+                    <a class="vamos" href="#">Vamos</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <div id="servicios" class="servicios">
+        <h1>Servicios<span class="punto">.</span></h1>
+        <p>Estámos listo para atender tu solicitud</p>
+        <div class="formasdeventa">
+            <div class="domicilio">
+                <h1>Domicilio</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                    Magni quibusdam repudiandae laborum sit illum!
+                </p>
+                <p>Número de contacto: 555-555-555-22</p>
+            </div>
+            <div class="reservacion">
+                <h1>Reservación</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                    Magni quibusdam repudiandae laborum sit illum!
+                </p>
+                <a class="reservar" href="#">Reservar</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="about" class="about">
+        <h1>Sobre Nosotros<span class="punto">.</span></h1>
+        <div class="acercade">
+            <img src="/static/tanv.jpg">
+            <div class="pepe">
+                <h1>Cobaya<span class="punto">.</span></h1>
+                <p class="textabout">
+                    "Satisfacer las necesidades gastronómicas de nuestros
+                    clientes, ofreciendo alimentos y servicios con la más alta calidad,
+                    donde se sobrepasen las expectativas de nuestros clientes y ser un espacio
+                    de trabajo que permita la realización personal y el Desarrollo de sus
+                    colaboradores en el grupo"
+                </p>
+                <p>Ubicanos aquí:</p>
+                <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d243.98297540190822!2d-76.6601866756234!3d-11.924035270798504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105e57095ad596d%3A0x3536ce4bed9dcbaa!2sel%20chiste!5e0!3m2!1ses!2sco!4v1649784367324!5m2!1ses!2sco" width="450" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+            </div>
+        </div>
+        <div class="colores">
+            <div class="rojo"></div>
+            <div class="verde"></div>
+        </div>
+    </div>
+    <div class="zx">
+        <div class="bus">
+            <p class="gf">¿Quieres califícanos?</p>
+            <div class="container_rating">
+                <div class="post">
+                  <div class="text">¡Gracias por calificarnos!</div>
+                  <div class="edit">EDITAR</div>
+                </div>
+                <div class="star-widget">
+                  <input type="radio" name="rate" id="rate-5">
+                  <label for="rate-5" class="fas fa-star"></label>
+                  <input type="radio" name="rate" id="rate-4">
+                  <label for="rate-4" class="fas fa-star"></label>
+                  <input type="radio" name="rate" id="rate-3">
+                  <label for="rate-3" class="fas fa-star"></label>
+                  <input type="radio" name="rate" id="rate-2">
+                  <label for="rate-2" class="fas fa-star"></label>
+                  <input type="radio" name="rate" id="rate-1">
+                  <label for="rate-1" class="fas fa-star"></label>
+                  <form action="#">
+                    <header></header>
+                    <div class="textarea">
+                      <textarea cols="30" placeholder="Describe tu experiencia.."></textarea>
+                    </div>
+                    <div class="btn">
+                      <button type="submit">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </div> 
+    </div>
+</div>
+        
+    
+
+
+    <footer>
+        <div class="foot">
+            <h1 class="dd">Cobaya<span class="punto">.</span></h1>
+            <div class="dir">
+                <a href="#" class="a">home</a>
+                <a href="#carta" class="a">carta</a>
+                <a href="#servicios" class="a">servicios</a>
+                <a href="#about" class="a">About</a>
+            </div>
+        </div>
+        <div class="redes">
+            <a href="https://github.com/Cobayaa"><ion-icon name="logo-github" class="links_redes"></ion-icon></a>
+            <a href="https://www.facebook.com/profile.php?id=100005223366167"><ion-icon name="logo-facebook" class="links_redes"></ion-icon></a>
+            <a href="https://www.linkedin.com/in/mocoa-riding-a68726231/"><ion-icon name="logo-linkedin"  class="links_redes"></ion-icon></a>
+        </div>
+        <div>
+            <p class="rr" >© 2022 Cobaya. Todos los derechos reservados. | Hecho con ❤ por <span class="logofooter"><a class="rr1" href="https://github.com/Cobayaa/Cobaya-hosting">cobaya</a></span></p>
+        </div>
+    </footer>
+    
+
+
+
+    <script src="/static/js/sticky.js"></script>    
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="/static/js/slider.js"></script>
+    <script src="/static/js/calificar.js"></script>
+
+</body>
+</html>

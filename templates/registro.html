@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/registro.css">
+    <title>Cobaya.</title>
+    <link rel="icon" type="image/png" href="/static/logo1.png">
+</head>
+<body>
+
+    {% block contenido%}
+    <div class="mes">
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+        {% for message in messages %}
+            <p>{{message}}</p>
+        {% endfor %}
+        {% endif %}
+        {% endwith %}
+    </div> 
+    <section>
+        <div class="container">
+            <div class="user singinbx">
+                <div class="formbox">
+                    <form action="{{url_for('registro')}}" enctype="multipart/form-data" method="POST">
+                        <h2>Registro</h2>
+                        <input type="text" name="username" placeholder="Nombre" value="{{ username }}">
+                        <input type="email" name="email" placeholder="Correo" value="{{ email }}">
+                        <input type="password" name="password" placeholder="Contraseña" value="{{ password }}">
+                        <input type="text" name="phone" placeholder="Celular" value="{{ phone }}">
+                        <input type="text" name="description" placeholder="Descripción de la empresa" value="{{ description }}">
+                        <input type="text" name="address" placeholder="Dirección" value="{{ address }}">
+                        <input type="file" name="image" placeholder="Imagen de tu logo" value="{{ image }}">
+                        <input type="submit" name="" value="Send">
+                    </form>
+                </div>
+                <div class="imgbox"><img src="/static/img-register.jpg"></div>
+            </div>     
+        </div>
+    </section>
+</body>
+{% endblock %}
+</html>

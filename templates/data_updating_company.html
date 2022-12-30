@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actualización de datos</title>
+    <link rel="stylesheet" href="/static/actualizar_datos.css">
+    <link rel="icon" type="image/png" href="/static/logo1.png">
+</head>
+<body>
+    
+    <div>
+        <h1 class="h1">Actualización de credenciales</h1>
+    </div>
+
+    <section>
+        <div class="container">
+            <div class="user singinbx">
+                <div class="formbox">
+                    <form action="/data_company_company/{{ usuario.0 }}" enctype="multipart/form-data" method="POST">
+                        <h2>Registro</h2>
+                        <input type="text" name="username" placeholder="Nombre" value="{{ usuario.1 }}">
+                        <input type="email" name="email" placeholder="Correo" value="{{ usuario.2 }}">
+                        <input type="password" name="password" placeholder="Contraseña" value="{{ usuario.3 }}">
+                        <input type="text" name="phone" placeholder="Celular" value="{{ usuario.4 }}">
+                        <input type="text" name="description" placeholder="Descripción de la empresa" value="{{ usuario.5 }}">
+                        <input type="text" name="address" placeholder="Dirección" value="{{ usuario.6 }}">
+                        <input type="file" name="image" placeholder="Imagen de tu logo" value="{{ usuario.7 }}">
+                        <input type="submit" name="" value="Enviar">
+                    </form>
+                </div>
+                <div class="imgbox"><img src="/static/bans.jpg"></div>
+            </div>     
+        </div>
+    </section>
+
+</body>
+</html>

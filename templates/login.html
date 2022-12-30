@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/login.css">
+    <title>Cobaya.</title>
+    <link rel="icon" type="image/png" href="/static/logo1.png">
+</head>
+<body>
+
+    
+    {% block contenido%}
+    <div class="mes">
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+        {% for message in messages %}
+            <p>{{message}}</p>
+        {% endfor %}
+        {% endif %}
+        {% endwith %}
+
+    <section>
+        <div class="container">
+            <div class="user singinbx">
+                <div class="imgbox"><img src="/static/img-login.jpg"></div>
+                <div class="formbox">
+                    <form action="{{url_for('login')}}" method="POST">
+                        <h2>Iniciar Sesión</h2>
+                        <input type="email" name="email" placeholder="Correo">
+                        <input type="password" name="password" placeholder="Contraseña">
+                        <input type="submit" name="" value="Login">          
+                    </form>
+                    <p>
+                        ¿No tienes Cuenta?
+                        
+                        <a class="log" href="{{ url_for('registro')}}">Registrarse</a>    
+                    </p>
+                    <div class="recuperar_contraseña">
+                        <a class="recu" href="{{ url_for('rec_password')}}">¿Olvidaste tu Contraseña?</a>
+                    </div>
+                </div>
+            </div>     
+        </div>
+    </section>
+    {% endblock %}
+</body>
+</html>

@@ -1,0 +1,736 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+
+*{
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+.log_img{
+    position: relative;
+    width: 35px;
+    height: 35px;
+    
+}
+
+body{
+    position: relative;
+    background: whitesmoke;
+}
+
+.container{
+    position: relative;
+    margin-top: 15px;
+    color: #181818;
+    font-weight: 100;
+    font-size: 15px;
+    text-align: center;
+}
+
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    padding: 15px 20px;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    transition: 0.5s;
+}
+
+header.sticky{
+    padding: 10px 100px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(1px);
+}
+
+.logo{
+    position: relative;
+    font-size: 40px;
+    font-weight: 900;
+    color: red;
+}
+
+header.sticky .logo{
+    position: relative;
+    color: red;
+}
+
+span{
+    position: relative;
+    font-size: 40px;
+    font-weight: 900;
+    color: #181818;
+}
+
+header ul{
+    position: relative;
+    display: flex;
+}
+
+header ul li{
+    position: relative;
+    list-style: none;
+}
+
+header ul li a{
+    position: relative;
+    color: #181818;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 0px 15px;
+    margin-right: 7px;
+}
+
+header.sticky ul li a{
+    color: #181818;
+}
+
+header ul li a.active,
+header ul li a:hover{
+    color: red;
+    border-bottom: 1px solid red;
+}
+
+header ul li a.cart,
+header ul li a:hover{
+    border-bottom:1px solid none;
+}
+
+.ff{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: -50px;
+}
+
+.opciones{
+    position: relative;
+    display: flex;
+    margin-top: -19px;
+}
+
+.mode{
+    position: relative;
+
+    color: #181818;
+    font-size: 20px;
+    font-weight: 700;
+    margin-right: 5px;
+    text-decoration: none;
+}
+ion-icon{
+    font-size: 24px;
+    color: red;
+}
+
+
+/*-------------------------------------------------------------*/
+
+.contenedor{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    
+}
+h2{
+    position: relative;
+    font-size: 60px;
+    margin-bottom: -12px;
+    margin-left: 70px;
+}
+
+.tono{
+    position: relative;
+    font-size: 60px;
+    background: #181818;
+    color: rgb(172, 231, 56);
+    text-align: center;
+    margin-bottom: -12px;
+    margin-left: 70px;
+}
+
+.asada{
+    position: relative;
+    font-size: 60px;
+    background: #181818;
+    color: rgb(255, 119, 104);
+    text-align: center;
+    margin-bottom: -12px;
+    margin-left: 70px;
+}
+
+.gourmet{
+    position: relative;
+    font-size: 60px;
+    color: #fe7;
+    background: #181818;
+    text-align: center;
+    margin-bottom: -12px;
+    margin-left: 70px;
+}
+
+.plus{
+    position: relative;
+    font-size: 50px;
+    color: #fe7;
+    background: #111;
+}
+
+.letra{
+    position: relative;
+    font-size: 60px;
+    margin-bottom: -12px;
+    margin-left: 70px;
+    color: red;
+}
+
+h3{
+    position: relative;
+    margin-bottom: -12px;
+    margin-left: 70px;
+    font-size: 50px;
+}
+.href{
+    position: relative;
+    margin-bottom: -12px;
+    margin-left: 70px;
+    font-size: 25px;
+    text-decoration: none;
+    padding: 5px 15px;
+    background: red;
+    color: white;
+}
+
+.contenido-slider{
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background: rgb(255, 209, 123);
+    display: flex;
+    flex-shrink: 0;
+    justify-content: space-around;
+    align-items: center;   
+}
+
+.slider-contenedor{
+    position: relative;
+    width: 100%;
+    padding-top: 90px;
+    display: flex;
+}
+
+.contenido-slider:nth-child(2){
+    position: relative;
+    background: rgb(172, 231, 56);
+}
+
+.contenido-slider:nth-child(3){
+    position: relative;
+    background: rgb(255, 61, 61);
+}
+
+.contenido-slider > img{
+    width: 750px;   
+}
+
+.contenido-slider > div{
+    width: 40%;
+}
+
+.container .restaurante{
+    position: relative;
+    font-size: 50px;
+    font-weight: 500;
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: -7px;
+    color: #262626;
+}
+
+.container .deli{
+    position: relative;
+    font-size: 80px;
+    font-weight: 900;
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+    color: #e40303;
+    margin-bottom: -10px;
+}
+.container .comi{
+    position: relative;
+    font-size: 50px;
+    text-align: left;
+    font-weight: 600;
+    color: #262626;
+    margin-top: 15px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container .drive{
+    position: relative;
+    font-size: 50px;
+    font-weight: 500;
+    color: #262626;
+    font-family: 'Open Sans', sans-serif;
+}
+.order{
+    position: relative;
+    padding: 5px 15px;
+    color: white;
+    background: #181818;
+    text-decoration: none;
+    box-shadow: 0px 4px 8px #888888;
+}
+/*---------------------------------------------------------*/
+
+.log{
+    position: relative;
+    text-decoration: none;
+    color: white;
+    padding: 5px 15px;
+    background: red;
+    margin-right: 5px;
+}
+.bug{
+    position: relative;
+    font-size: 20px;
+}
+
+.inicio{
+    position: relative;
+    font-size: 25px;
+}
+
+.order:hover{
+    background: #ff4040;
+    color: white;
+    transition: 0.5s;
+}
+
+.slider1{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: -90px;
+    display: flex;
+    justify-content: space-around;
+}
+/*----------------------------------------------*/
+.punto{
+    position: relative;
+    color: red;
+}
+
+/*----------------------------------------------*/
+
+.carta_presentacion{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.carta_presentacion .tarjeta{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: white;
+}
+.cosi{
+    position: relative;
+    font-size: 30px;
+    margin-left: -1px;
+    margin-bottom: -5px;
+    text-align: center;
+    justify-content: center;
+}
+
+.carta_presentacion .tarjeta:nth-child(even){
+    flex-direction: column-reverse;
+}
+
+.carta_presentacion .tarjeta .imagen{
+    position: relative;
+    width: 337px;
+    height: 250px;
+}
+
+.carta_presentacion .tarjeta .imagen .imgn{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carta_presentacion .tarjeta .pre_contenido{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carta_presentacion .tarjeta .contenido{
+    position: relative;
+    padding-left: 85px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.ha{
+    position: relative;
+    text-align: center;
+}
+.frase{
+    position: relative;
+    text-align: center;
+}
+
+.tuti{
+    position: relative;
+    text-align: justify;
+}
+
+.comillas{
+    position: relative;
+    color: red;
+    font-size: 20px;
+}
+
+
+.rr{
+    position: relative;
+    text-align: center;
+}
+
+.servicios{
+    position: relative;
+    padding-top: 40px;
+    text-align: center;
+}
+
+.vamos{
+    position: relative;
+    color: white;
+    padding: 5px 15px;
+    background: red;
+    text-decoration: none;
+}
+
+.formasdeventa{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    padding: 0px 50px;
+}
+
+
+.colores{
+    position: relative;
+    display: flex;
+}
+
+.rojo{
+    position: relative;
+    width: 285px;
+    margin-top: -1px;
+    height:6px;
+    background: red;
+}
+
+.verde{
+    position: relative;
+    margin-top: -1px;
+    width: 285px;
+    height:6px;
+    background:green;
+}
+
+.domicilio{
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 20px;
+    background: rgb(255, 209, 123);
+}
+
+.reservacion{
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 20px;
+    color: white;
+    background: rgb(255, 61, 61);
+}
+
+.reservar{
+    position: relative;
+    color: #181818;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 5px 15px;
+    background: wheat;
+}
+
+.about{
+    position: relative;
+    text-align: center;
+    padding: 50px 50px;
+}
+
+.acercade{
+    position: relative;
+    display: flex;
+    grid-gap: 20px;
+}
+
+.dd{
+    position: relative;
+    color: white;
+}
+
+.textabout{
+    position: relative;
+    text-align: justify;
+}
+
+footer{
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    padding-top: -10px;
+    margin-bottom: -16px;
+    background: #181818;
+}
+
+.dir{
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: -15px;
+    text-align: center;
+}
+
+.a{
+    position: relative;
+    padding: 5px 15px;
+    text-decoration: none;
+    color: white;
+}
+
+.redes{
+    position: relative;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.links_redes{
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 5px 15px;
+    color: white;
+}
+
+.logofooter{
+    position: relative;
+    color:rgb(255, 175, 1);
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.rr{
+    position: relative;
+    color: white;
+    background: #262626;
+}
+.rr1{
+    position: relative;
+    color: #72cb10;
+    text-decoration: none;
+}
+.rr1:hover{
+    color: yellow;
+    transition: 5s;
+}
+
+.container_rating{
+    position: relative;
+    width: 400px;
+    background: #111;
+    padding: 20px 30px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.container_rating .post{
+    display: none;
+}
+.container_rating .text{
+    font-size: 25px;
+    color:#fe7;
+    font-weight: 500;
+}
+.container_rating .edit{
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    font-size: 16px;
+    color: #666;
+    font-weight: 500;
+    cursor: pointer;
+}
+.container_rating .edit:hover{
+    text-decoration: underline;
+}
+.container_rating .star-widget input{
+    display: none;
+}
+.star-widget label{
+    font-size: 40px;
+    color: #444;
+    padding: 10px;
+    float: right;
+    transition: all 0.2s ease;
+}
+input:not(:checked) ~ label:hover,
+input:not(:checked) ~ label:hover ~ label{
+    color: #fd4;
+}
+input:checked ~ label{
+    color: #fd4;
+}
+input#rate-5:checked ~ label{
+    color: #fe7;
+    text-shadow: 0 0 20px #952;
+}
+#rate-1:checked ~ form header:before{
+    content: "Lo Odio 😡";
+}
+#rate-2:checked ~ form header:before{
+    content: "No me Gusta 😣";
+}
+#rate-3:checked ~ form header:before{
+    content: "Nada Mal 👌";
+}
+#rate-4:checked ~ form header:before{
+    content: "Está Genial 😁";
+}
+#rate-5:checked ~ form header:before{
+    content: "Me Encanta 😍";
+}
+.container_rating form{
+    display: none;
+}
+input:checked ~ form{
+    display: block;
+}
+form header{
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    font-size: 25px;
+    color: #fe7;
+    font-weight: 500;
+    margin: 5px 0 20px 0;
+    text-align: center;
+    transition: all 0.2s ease;
+}
+form .textarea{
+    height: 100px;
+    width: 100%;
+    overflow: hidden;
+}
+form .textarea textarea{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: gold;
+    border: 1px solid #333;
+    background: #222;
+    padding: 10px;
+    font-size: 17px;
+    resize: none;
+}
+.textarea textarea:focus{
+    border-color: #444;
+}
+form .btn{
+    height: 45px;
+    width: 100%;
+    margin: 15px 0;
+}
+form .btn button{
+    height: 100%;
+    width: 100%;
+    border: 1px solid #444;
+    outline: none;
+    background: #222;
+    color: #999;
+    font-size: 17px;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+form .btn button:hover{
+    background: #1b1b1b;
+}
+
+.zx{
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 70px;
+    display: flex;
+    background: whitesmoke;
+}
+.pec{
+    position: relative;
+    margin-top: 20px;
+    width: 250px;
+    height: 250px;
+}
+.gf{
+    position: relative;
+    font-size: 20px;
+}
+.container_rating{
+    position: relative;
+}
+
+.bus{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+

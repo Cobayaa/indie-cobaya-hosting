@@ -1,0 +1,97 @@
+<!--
+{% extends "base.html"%}
+
+{% block titulo%}
+    Agregar Productos
+{% endblock %}
+
+-->
+
+{% block contenido%}
+<div class="container1">
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+    {% for message in messages %}
+        <p>{{message}}</p>
+    {% endfor %}
+    {% endif %}
+    {% endwith %}
+</div>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/estilo_admin.css">
+    <title>Admin</title>
+    <link rel="icon" type="image/png" href="/static/logo1.png">
+</head>
+<body>
+    
+    <section>
+        <!-- {% for login_users in usuario %} -->
+        <h1 class="logo">cobaya<span class="punto">.</span></h1>
+        <!-- {% endfor %} -->
+        <div class="separador">
+            <ul>
+                <li><a class="pedidos" href="#">Pedidos</a></li>
+                <li><a class="reservaciones" href="#">Reservaciones</a></li>
+                <li><a class="calificaciones" href="{{ url_for('company_products') }}" target="_blank">Menú</a></li>
+                <li><a class="actu" href="/updating_company_document/{{ session['id' ]}}">actualizar datos</a></li>
+                <li><a class="salir" href="{{ url_for('layout') }}">Cerrar Sesión</a></li>
+            </ul>
+            
+        </div>
+    </section>
+
+    <h1>Inventario de Productos</h1>
+    
+    <form class="agregar" action="{{url_for('agregar')}}" enctype="multipart/form-data" method="POST">
+        <input type="text" placeholder="producto" name="nombre" value="{{nombre}}">
+        <input type="text" placeholder="descripción" name="descripción" value="{{descripción}}">
+        <input type="number" placeholder="precio" name="precio" value="{{precio}}">
+        <input type="text" placeholder="estado" name="estado" value="{{estado}}">
+        <input type="file" placeholder="imágen" name="imagen" value="{{imagen}}">
+        <input type="submit" name="" value="Guardar">
+    </form>
+    <table class="table table-hover table-dark">
+        <thead>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Producto</th>
+            <th scope="col">descripción</th>
+            <th scope="col">precio</th>
+            <th scope="col">estado</th>
+            <th scope="col">imagen</th>
+            <th scope="col">Opciones</th>
+          </tr>
+        </thead>
+        <tbody>
+            {%for productos in products %}
+            <tr>
+                <td>{{productos['id']}}</td>
+                <td>{{productos['nombre']}}</td>
+                <td>{{productos['descripción']}}</td>
+                <td>{{productos['precio']}}</td>
+                <td>{{productos['estado']}}</td>
+                <td>
+                    <img src="{{ productos['imagen']}}" style="width:100px; height:100px;">
+                </td>
+                
+    
+                <td>
+                    <a class="editar" href="/editar/{{productos['id']}}">editar</a>
+                    <a class="eliminar" href="/eliminar/{{productos['id']}}">eliminar</a>
+                </td>
+
+            </tr>
+            {% endfor %}
+        </tbody>
+      </table>
+    {% endblock %} 
+</body>
+<script src="/static/js/admin_darkmode.js"></script>
+</html>
+    
