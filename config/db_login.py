@@ -6,7 +6,7 @@ db = mysql.connector.connect(
     user=settings.MYSQL_USER,
     password=settings.MYSQL_PASSWORD,
     database=settings.MYSQL_DB,
-    port=settings.MYSQL_PORT,
+    port=settings.MYSQL_PORT
 )
 
 db.autocommit = True
